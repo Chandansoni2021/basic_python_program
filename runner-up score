@@ -1,0 +1,7 @@
+n = int(input())
+k = list(map(int,input().split(" ")))
+h = set(k)
+g = list(h)
+g.sort()
+j = g[-2]
+print(j)
