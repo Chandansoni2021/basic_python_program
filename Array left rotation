@@ -1,0 +1,10 @@
+X =input().split(" ")
+c=X[0]
+m=X[1]
+n = list(map(int, input().split()))
+for i in range(0,int(m)):
+    J=int(n[0])
+    n.append(J)
+    n.remove((n[0]))
+for i in n:
+    print(i,end=" ")
