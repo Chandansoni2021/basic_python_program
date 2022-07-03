@@ -1,0 +1,13 @@
+def print_rangoli(size):
+    columns = 4*(size-1)+1
+    it = list(range(size-1,0,-1)) + list(range(size))
+    it2 = list(range(size-1,-1,-1))
+    for i in it:
+        case = i
+        base = chr(97+i)       
+        for j in range(it2[i]):
+            case += 1
+            base = f'{chr(97+case)}-{base}-{chr(97+case)}'
+        base = base.center(columns,'-')
+        print(base)
+
