@@ -1,0 +1,7 @@
+def faabonacci(n):
+    assert n>=0 and int(n)==n ,"this is small number for fabonacci"
+    if n in [0,1]:
+        return n
+    else:
+        return faabonacci(n-1)+faabonacci(n-2)
+print(faabonacci(5))
