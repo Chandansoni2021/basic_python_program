@@ -1,0 +1,7 @@
+# product of array element
+def productofsum(arr):
+    if len(arr)==0:
+        return 1
+    else:
+        return arr[0]*productofsum(arr[1:])
+print(productofsum([1,2,3,4,5]))
