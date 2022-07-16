@@ -1,0 +1,9 @@
+def firstSecond(givenList):
+    givenList.sort()
+    b=[]
+    for i in givenList:
+        if i not in b:
+            b.append(i)
+    j=b[-1]
+    k=b[-2]
+    return j,k
