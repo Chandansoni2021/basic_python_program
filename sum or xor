@@ -1,0 +1,7 @@
+def gh(n):
+    if n==0:
+        return 1
+    num=str(bin(n)[2:])
+    return 2**int(num.count('0'))
+n=int(input())
+print(gh(n))
