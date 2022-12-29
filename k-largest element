@@ -1,0 +1,28 @@
+Sample Input 1:
+2
+4 2
+3 4 2 1
+5 1
+2 2 3 3 1
+Sample Output 1:
+3 4
+3
+Explanation For Sample Input 1:
+Test case 1:
+If we sort the array then it will look like: [1, 2, 3, 4]. The 2 largest elements will be [3, 4].
+
+Test case 2:
+If we sort the array then it will look like: [1, 2, 2, 3, 3]. Then the largest element will be [3].
+\
+
+code- 
+
+lst=[-2,12,-1,1,20,1]
+k=2
+n=5
+lst.sort()
+print(lst)
+lst.reverse()
+print(lst)
+for i in range(k-1,0-1,-1):
+    print(lst[i],end=" ")
